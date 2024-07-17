@@ -185,9 +185,42 @@ span {
   margin: 5rem 0;
 }
 
+.about-me {
+  background: var(--second-bg-color);
+}
+
+.about-me-image {
+  text-align: center;
+}
+
+.about-me-container {
+  display: flex;
+  gap: 50px;
+}
+
+.about-me img {
+  max-width: 480px;
+  filter: grayscale(11%) sepia(28%) saturate(157%) contrast(115%);
+  -webkit-filter: grayscale(11%) sepia(28%) saturate(157%) contrast(115%);
+  -moz-filter: grayscale(11%) sepia(28%) saturate(157%) contrast(115%);
+  border-radius: 7px;
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.about-me-description {
+  padding: 0 20px 20px 25px;
+}
+
+.about-me-description p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
 .education {
   padding: 100px 15px;
-  background: var(--second-bg-color);
 }
 
 .education h2 {
@@ -273,6 +306,10 @@ span {
   color: white;
   line-height: 22px;
   font-weight: 300;
+}
+
+.experience {
+  background: var(--second-bg-color);
 }
 
 .skills {
@@ -465,5 +502,14 @@ span {
 
   .home-img img {
     width: 56vw;
+    top: 8rem;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .about-me img {
+    width: 90%;
   }
 }
