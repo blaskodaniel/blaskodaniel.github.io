@@ -477,13 +477,12 @@ span {
   .navbar {
     position: absolute;
     top: 100%;
-    right: 0;
+    left: -100%;
     width: 100%;
     padding: 1rem 3%;
-    background: rgba(0, 0, 0, 0.95);
+    background: var(--bg-color);
     backdrop-filter: blur(20px);
     text-align: center;
-    display: none;
     transition: 0.25s ease;
     transition-delay: 0.25s;
   }
@@ -495,6 +494,7 @@ span {
   }
 
   .navbar.active {
+    left: 0;
     display: block;
     transition-delay: 0s;
   }
