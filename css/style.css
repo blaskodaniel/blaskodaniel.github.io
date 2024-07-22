@@ -17,6 +17,8 @@
   --main-color: #00abf0;
   --sticky-color: rgb(0, 0, 0, 0.3);
   --skill-width: 75px;
+
+  --header-height: 3.5rem;
 }
 html {
   font-size: 60%;
