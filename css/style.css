@@ -390,15 +390,14 @@ span {
   justify-items: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 655px;
   padding-top: 4rem;
 }
 
 .skill-tag {
-  /* border: 1px solid var(--bg-color); */
   font-size: 1.6rem;
-  padding: 5px 15px;
-  /* background-color: var(--bg-color); */
+  padding: 5px 10px;
+  text-align: center;
 
   background: transparent;
   border: 2px solid var(--main-color);
