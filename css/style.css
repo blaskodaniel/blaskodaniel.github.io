@@ -80,14 +80,45 @@ body {
   border-bottom: 3px solid var(--main-color);
 }
 
+.lang-switch {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-left: 4rem;
+}
+
+.lang-switch button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 0.6rem;
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.lang-switch button:hover {
+  color: var(--main-color);
+}
+
+.lang-switch button.active {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(--main-color);
   display: none;
 }
 
-section {
+#home{
   padding: 10rem 12% 10rem;
+}
+
+section {
+  padding: 5rem 12% 5rem;
 }
 
 .home {
@@ -345,7 +376,7 @@ span {
 }
 
 .skills {
-  padding: 100px 15px;
+  padding: 8px 25px 50px 25px;
   background: var(--second-bg-color);
 }
 
@@ -467,7 +498,7 @@ span {
     padding: 2rem 3%;
   }
   section {
-    padding: 10rem 3% 2rem;
+    padding: 3rem 3% 2rem;
   }
   .timeline-container::before {
     left: 7px;
@@ -527,6 +558,11 @@ span {
     font-size: 2rem;
     margin: 3rem 0;
     color: white;
+  }
+
+  .lang-switch {
+    justify-content: center;
+    margin: 2rem 0;
   }
 
   .home {
