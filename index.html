@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Blaskó portfolio</title>
+    <title>Dániel Blaskó — Senior Frontend Developer</title>
+    <meta
+      name="description"
+      content="Dániel Blaskó — Senior Frontend Developer with 10+ years of experience building React, Next.js and React Native applications in TypeScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- box icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -18,16 +23,16 @@
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="logo">Daniel <span>Blasko</span></a>
+      <a href="#home" class="logo">BD<span>.</span></a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="#home" data-i18n="nav.home">Home</a>
-        <a href="#about-me" data-i18n="nav.about">About me</a>
-        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#about" data-i18n="nav.about">About</a>
         <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
 
         <div class="lang-switch">
           <button type="button" data-lang="en">EN</button>
@@ -36,231 +41,336 @@
       </nav>
     </header>
 
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1 data-i18n="home.greeting">Hi, I'm <span>Daniel Blasko</span></h1>
-        <h3 class="text-animation">
-          <span data-i18n="home.role">Frontend Developer</span>
-        </h3>
-        <p><a href="tel:+36-30-330-9367">+36 30 330 9367</a></p>
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-text">
+          
+          <h1 class="hero-title" data-i18n="hero.title">
+            Hi, I'm <span>Dániel Blaskó</span>
+          </h1>
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Frontend Developer</p>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Computer engineer with 10+ years of experience building React,
+            Next.js and React Native applications in TypeScript. I care about
+            clean code, performance and great user experience.
+          </p>        
 
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/blaskodaniel/" target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/blaskodaniel" target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" data-i18n="hero.cta"
+              >Get in touch</a
+            >
+            <a
+              id="cv-link"
+              href="Dániel_Blaskó_Frontend_Developer_EN.pdf"
+              class="btn btn-ghost"
+              download
+              data-i18n="hero.cv"
+              >Download CV</a
+            >
+          </div>
+
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/blaskodaniel/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/blaskodaniel"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="mailto:blaskoi@gmail.com" aria-label="Email"
+              ><i class="bx bx-envelope"></i
+            ></a>
+          </div>
         </div>
-      </div>
-      <div class="home-img">
-        <img src="images/profile.jpeg" alt="" />
-      </div>
-    </section>
 
-    <section class="about-me" id="about-me">
-      <h2 class="heading" data-i18n="about.heading">About me</h2>
-      <div class="about-me-container">
-        <!-- <div class="about-me-image">
-          <img src="images/about-me.jpg" alt="about me" />
-        </div> -->
-        <div class="about-me-description">
+        <div class="hero-img">
+          <img src="images/profile.jpeg" alt="Dániel Blaskó" />
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about" id="about">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="about.kicker">Profile</span>
+          <h2 class="section-title" data-i18n="about.heading">About me</h2>
+        </div>
+        <div class="about-body">
           <p data-i18n="about.p1">
-            I am a Computer Science Engineer with over 10 years of professional
-            experience. My primary expertise lies in the modern JavaScript
-            ecosystem, with profound knowledge of React and Next.js,
-            strongly-typed development using TypeScript, state management with
-            Redux, and familiarity with Angular. Throughout numerous projects, I
-            have gained extensive routine in applying popular supplementary
-            libraries, such as TailwindCSS, TanStack Query, Axios, React Hook
-            Form, and Zustand. Additionally, I have relevant experience in CI/CD
-            processes.
+            I'm a computer engineer with over 10 years of frontend experience,
+            specializing in building React, Next.js and React Native
+            applications in TypeScript. I'm confident with the key client-side
+            libraries — Redux, Zustand, TanStack Query, Tailwind CSS, React Hook
+            Form and i18next — and experienced in setting up CI/CD pipelines with
+            GitHub Actions. I also build REST APIs with Node.js (Express) and
+            Python, backed by MongoDB and JWT-based authentication. I actively
+            use AI tools in my work, enjoy collaborating in a team and sharing
+            knowledge, and I'm strongly motivated by continuous learning and
+            adopting new technologies.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="experience" id="experience">
-      <h2 class="heading" data-i18n="experience.heading">Experience</h2>
-
-      <div class="timeline-container">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024 - 2026</div>
-          <div class="timeline-content">
-            <h3 class="title">weCan Technology Zrt.</h3>
-            <span data-i18n="experience.role">Front-End Developer</span>
-            <a href="https://wecan.technology/" target="_blank"
-              >https://wecan.technology</a
-            >
-
-            <p data-i18n="experience.wecan">
-              Development of React Native applications in TypeScript using
-              Redux. Development of React web applications based on existing
-              Figma designs, utilizing Redux for state management and
-              TailwindCSS for styling. Experience with Microsoft Azure, MySQL,
-              and PostgreSQL. Developed data scrapers using Python. Leveraging
-              modern AI tools, including Antigravity and Claude Code.
-            </p>
-          </div>
+      <!-- EXPERIENCE -->
+      <section class="section experience" id="experience">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="experience.kicker"
+            >Career</span
+          >
+          <h2 class="section-title" data-i18n="experience.heading">
+            Experience
+          </h2>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2021 - 2024</div>
-          <div class="timeline-content">
-            <h3 class="title">Swapp Hungary Kft.</h3>
-            <span data-i18n="experience.role">Front-End Developer</span>
-            <a href="https://joinswapp.com" target="_blank"
-              >https://joinswapp.com</a
-            >
 
-            <p data-i18n="experience.swapp">
-              Application development using the Next.js framework based on React
-              and TypeScript. Hands-on experience with AWS, version control
-              using Git, and integrating REST APIs.
-            </p>
-          </div>
+        <div class="timeline">
+          <article class="exp-card">
+            <div class="exp-head">
+              <div>
+                <h3 class="exp-role" data-i18n="experience.role.senior">
+                  Senior Frontend Developer
+                </h3>
+                <p class="exp-company">
+                  <a href="https://wecan.technology/" target="_blank" rel="noopener"
+                    >weCan Technology Zrt.</a
+                  >
+                  <span class="exp-loc">· Budapest</span>
+                </p>
+              </div>
+              <span class="exp-date">2024 — 2026</span>
+            </div>
+            <ul class="exp-points" data-i18n="experience.wecan.points"></ul>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-head">
+              <div>
+                <h3 class="exp-role" data-i18n="experience.role.frontend">
+                  Frontend Developer
+                </h3>
+                <p class="exp-company">
+                  <a href="https://joinswapp.com" target="_blank" rel="noopener"
+                    >Swapp Hungary Kft.</a
+                  >
+                  <span class="exp-loc">· Budapest</span>
+                </p>
+              </div>
+              <span class="exp-date">2021 — 2024</span>
+            </div>
+            <ul class="exp-points" data-i18n="experience.swapp.points"></ul>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-head">
+              <div>
+                <h3 class="exp-role" data-i18n="experience.role.frontend">
+                  Frontend Developer
+                </h3>
+                <p class="exp-company">
+                  <a href="https://www.sensenet.com/" target="_blank" rel="noopener"
+                    >Sense/Net Zrt.</a
+                  >
+                  <span class="exp-loc">· Budapest</span>
+                </p>
+              </div>
+              <span class="exp-date">2016 — 2021</span>
+            </div>
+            <ul class="exp-points" data-i18n="experience.sensenet.points"></ul>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-head">
+              <div>
+                <h3 class="exp-role" data-i18n="experience.role.frontend">
+                  Frontend Developer
+                </h3>
+                <p class="exp-company">
+                  <span>3TG Brokers</span>
+                  <span class="exp-loc">· Budapest</span>
+                </p>
+              </div>
+              <span class="exp-date">2014 — 2016</span>
+            </div>
+            <ul class="exp-points" data-i18n="experience.tg3.points"></ul>
+          </article>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2016 - 2021</div>
-          <div class="timeline-content">
-            <h3 class="title">Sense/Net Zrt.</h3>
-            <span data-i18n="experience.role">Front-End Developer</span>
-            <a href="https://www.sensenet.com/" target="_blank"
-              >https://www.sensenet.com</a
-            >
-            <p data-i18n="experience.sensenet">
-              Development of Sense/Net portal-based systems within the ASP.NET
-              framework, using jQuery and Vanilla JavaScript. Hands-on
-              experience working with MSSQL databases.
-            </p>
-          </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section education" id="education">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="education.kicker"
+            >Background</span
+          >
+          <h2 class="section-title" data-i18n="education.heading">Education</h2>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2014 - 2016</div>
-          <div class="timeline-content">
-            <h3 class="title">
-              3TG Brokers (Advanced Development Solutions Kft.)
+
+        <div class="edu-grid">
+          <article class="edu-card">
+            <span class="edu-date">2010 — 2016</span>
+            <h3 class="edu-school" data-i18n="education.obuda.school">
+              Óbuda University — John von Neumann Faculty of Informatics
             </h3>
-            <span data-i18n="experience.role">Front-End Developer</span>
-            <p data-i18n="experience.tg3">
-              Front-end development activities, primarily focused on creating
-              and maintaining web applications and websites. Developed solutions
-              in an ASP.NET MVC environment utilizing HTML5, CSS, Bootstrap,
-              jQuery, AngularJS, and Vanilla JavaScript.
+            <p class="edu-desc" data-i18n="education.obuda.desc">
+              BSc in Computer Engineering, Software Technology specialization.
             </p>
+          </article>
+
+          <article class="edu-card">
+            <span class="edu-date">2008 — 2010</span>
+            <h3 class="edu-school" data-i18n="education.lia.school">
+              LIA Education Center
+            </h3>
+            <p class="edu-desc" data-i18n="education.lia.desc">
+              Higher-level OKJ Web Developer qualification — theoretical and
+              practical foundations of web development and programming.
+            </p>
+          </article>
+
+          <article class="edu-card">
+            <span class="edu-date">2000 — 2004</span>
+            <h3 class="edu-school" data-i18n="education.high.school">
+              Szent-Györgyi Albert Grammar and Vocational School
+            </h3>
+            <p class="edu-desc" data-i18n="education.high.desc">
+              Vocational secondary school leaving certificate (Balassagyarmat).
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section skills" id="skills">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="skills.kicker">Toolbox</span>
+          <h2 class="section-title" data-i18n="skills.heading">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 data-i18n="skills.frontend">Frontend</h3>
+            <ul>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>React Native</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Tailwind CSS</li>
+              <li>styled-components</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.state">State &amp; Data</h3>
+            <ul>
+              <li>Redux Toolkit</li>
+              <li>Zustand</li>
+              <li>TanStack Query</li>
+              <li>React Hook Form</li>
+              <li>i18next</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.backend">Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>REST APIs</li>
+              <li>MongoDB</li>
+              <li>JWT</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.tooling">Tooling &amp; Cloud</h3>
+            <ul>
+              <li>Git / Git-flow</li>
+              <li>GitHub Actions</li>
+              <li>AWS</li>
+              <li>GrowthBook</li>
+              <li>Jira</li>
+              <li>Figma</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="education" id="education">
-      <h2 class="heading" data-i18n="education.heading">Education</h2>
-
-      <div class="timeline-container">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2010 - 2016</div>
-          <div class="timeline-content">
-            <h3>Óbuda University</h3>
-            <p data-i18n="education.obuda">
-              John von Neumann Faculty of Informatics (Budapest) Bachelor of
-              Science in Computer Engineering
-            </p>
+        <div class="languages">
+          <h3 data-i18n="skills.languages">Languages</h3>
+          <div class="lang-list">
+            <div class="lang-item">
+              <span data-i18n="lang.hungarian">Hungarian</span>
+              <small data-i18n="lang.native">Native</small>
+            </div>
+            <div class="lang-item">
+              <span data-i18n="lang.english">English</span>
+              <small data-i18n="lang.intermediate">Intermediate</small>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2008 - 2010</div>
-          <div class="timeline-content">
-            <h3 data-i18n="education.okjTitle">OKJ Vocational Training</h3>
-            <p data-i18n="education.okj">
-              LIA Education Center (Budapest) Advanced OKJ Vocational Training -
-              Web Programmer
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2000 - 2004</div>
-          <div class="timeline-content">
-            <h3 data-i18n="education.highSchoolTitle">High School</h3>
-            <p data-i18n="education.highSchool">
-              I graduated from Szent-Györgyi Albert Secondary School and
-              Vocational School in Balassagyarmat with a vocational secondary
-              school diploma
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="skills" id="skills">
-      <h2 class="heading" data-i18n="skills.heading">Skills</h2>
+      <!-- CONTACT -->
+      <section class="section contact" id="contact">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="contact.kicker">Contact</span>
+          <h2 class="section-title" data-i18n="contact.heading">Get in touch</h2>
+        </div>
 
-      <div class="skills-container">
-        <div class="skill">
-          <span><i class="ri-nextjs-line"></i></span>
-        </div>
-        <div class="skill">
-          <span><i class="ri-reactjs-line"></i></span>
-        </div>
-        <div class="skill">
-          <span><i class="ri-html5-line"></i></span>
-        </div>
-        <div class="skill">
-          <span><i class="ri-angularjs-line"></i></span>
-        </div>
-        <div class="skill">
-          <span><i class="ri-javascript-line"></i></span>
-        </div>
-        <div class="skill">
-          <span><i class="ri-nodejs-line"></i></span>
-        </div>
-      </div>
+        <p class="contact-lead" data-i18n="contact.lead">
+          Open to frontend opportunities and interesting projects. Feel free to
+          reach out.
+        </p>
 
-      <div class="skills-name-container">
-        <div class="skill-tag">React</div>
-        <div class="skill-tag">Next.js</div>
-        <div class="skill-tag">React Native</div>
-        <div class="skill-tag">TypeScript</div>
-        <div class="skill-tag">JavaScript</div>
-        <div class="skill-tag">Angular</div>
-        <div class="skill-tag">Node.js</div>
-        <div class="skill-tag">Python</div>
-        <div class="skill-tag">Redux</div>
-        <div class="skill-tag">TanStack Query</div>
-        <div class="skill-tag">TailwindCSS</div>
-        <div class="skill-tag">Styled-components</div>
-        <div class="skill-tag">HTML5 / CSS3</div>
-        <div class="skill-tag">MySQL</div>
-        <div class="skill-tag">PostgreSQL</div>
-        <div class="skill-tag">MongoDB</div>
-        <div class="skill-tag">AWS</div>
-        <div class="skill-tag">Microsoft Azure</div>
-        <div class="skill-tag">Docker</div>
-        <div class="skill-tag">Git Flow</div>
-        <div class="skill-tag">Jest</div>
-        <div class="skill-tag">Sentry</div>
-        <div class="skill-tag">Express</div>
-        <div class="skill-tag">Growthbook</div>
-      </div>
-    </section>
-    <!-- contact section design -->
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:blaskoi@gmail.com">
+            <i class="bx bx-envelope"></i>
+            <span class="contact-label" data-i18n="contact.email">Email</span>
+            <span class="contact-value">blaskoi@gmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:+36-30-330-9367">
+            <i class="bx bx-phone"></i>
+            <span class="contact-label" data-i18n="contact.phone">Phone</span>
+            <span class="contact-value">+36 30 330 9367</span>
+          </a>
+          <a
+            class="contact-card"
+            href="https://www.linkedin.com/in/blaskodaniel/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="bx bxl-linkedin"></i>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">in/blaskodaniel</span>
+          </a>
+          <a
+            class="contact-card"
+            href="https://github.com/blaskodaniel"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="bx bxl-github"></i>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">blaskodaniel</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
-      <div class="social">
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-        <a href="#"><i class="bx bxl-github"></i></a>
-      </div>
-      <div class="contact">
-        <span
-          ><a href="tel:+36-30-330-9367">+36 30 330 9367</a> |
-          <a href="mailto:blaskoi@gmail.com">blaskoi@gmail.com</a></span
-        >
-      </div>
+      <p>© <span id="year"></span> Dániel Blaskó</p>
     </footer>
+
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>
   </body>

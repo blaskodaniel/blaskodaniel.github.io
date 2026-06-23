@@ -6,30 +6,37 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-// scroll behavior
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("header nav a");
+// Close the mobile menu after clicking a nav link
+navbar.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
+  });
+});
 
-window.onscroll = () => {
+// Scroll spy + sticky header
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".navbar a");
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
   sections.forEach((sec) => {
-    const top = window.scrollY;
-    const offset = sec.offsetTop - 100;
+    const offset = sec.offsetTop - 120;
     const height = sec.offsetHeight;
     const id = sec.getAttribute("id");
 
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        document
-          .querySelector("header nav a[href*=" + id + "]")
-          .classList.add("active");
-      });
+    if (scrollY >= offset && scrollY < offset + height) {
+      navLinks.forEach((link) => link.classList.remove("active"));
+      const active = document.querySelector(`.navbar a[href="#${id}"]`);
+      if (active) active.classList.add("active");
     }
   });
 
-  const header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 100);
+  header.classList.toggle("sticky", scrollY > 40);
+});
 
-  menuIcon.classList.remove("bx-x");
-  navbar.classList.remove("active");
-};
+// Footer year
+const yearEl = document.querySelector("#year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
